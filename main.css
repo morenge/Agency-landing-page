@@ -1,0 +1,273 @@
+/*-------- Variables-------------
+$white: #ffffff;
+$highlight:#7ac483;
+$grey-background: #b9b7c6;
+$dark-grey: #3f3d4e;
+*/
+/*--Global Styles--- > */
+*{
+    
+    
+    box-sizing:border-box;
+}
+
+body {
+    font-family: asap, sans-serif;
+}
+.wrapper {
+    width: 1440px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.button {
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    padding: .6rem 3.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    margin: 0.75rem;
+    
+}
+.button_highlight{
+    background:#7ac483;
+}
+.button_secondary {
+    background:rgba(250, 250, 250, 0.35);
+}
+.button_small {
+    padding: .3rem 1.5rem;
+}
+.button_large {
+    padding: .3rem 1.5rem;
+    font-size: 1.35rem;
+}
+.cf:after, 
+.cf:before {
+    content:" ";
+    display:table;
+}
+.cf:after {
+    clear:both;
+}
+
+/* Banner Styels */
+#banner {
+    background-image: url(../Agency\ landing\ Page/bannerphoto.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    
+}
+header {
+    padding: 2rem 0;
+}
+#logo {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.35rem;
+    float:left;
+    margin:0;
+}
+span {
+    font-weight:400;
+}
+nav {
+    float: right;
+}
+nav a {
+    color:#ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 2rem;
+}
+.content {
+    padding: 2rem 0 7rem 0;
+    color: #ffffff;
+}
+.title {
+   text-align: center;
+}
+.title {
+    font-size: 3.5rem;
+    margin:0;
+    text-align:center;
+}
+.sub_title {
+    text-align:center;
+    font-weight: 400;
+    font-size: 1.35rem;
+    width: 500px;
+    margin: 0 auto 2rem auto;
+    line-height: 1.75;
+}
+.button_wrapper{
+    text-align:center;
+    margin: 3rem 0;
+    
+}
+
+/*----------- Services-------*/
+
+#services {
+    background: #b9b7c6;
+    padding: 2rem 0 6.5rem 0;
+    position:relative;
+}
+.service {
+    background: #ffffff;
+    width: 31%;
+    float: left;
+    margin: -5rem 1% 0 1%;
+    padding: 3rem 2.5%;
+    text-align:center;
+    position:relative;
+    -webkit-box-shadow: 0px 0px 57px 0px rgba(4,6,9,0.25);
+    -moz-box-shadow: 0px 0px 57px 0px rgba(4,6,9,0.25);
+    box-shadow: 0px 0px 57px 0px rgba(4,6,9,0.25);
+    border-radius: .35rem;
+}
+h3{
+    margin:0;
+    font-size: 1.5rem;
+    color: #3f3d4e;
+}
+
+p {
+    margin: 0 0 2rem 0;
+    color:#3f3d4e;
+}
+.button {
+    padding: .5rem 2rem;
+}
+/* TODO list 28:14
+/*& :after {
+    content:" ";
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+    height: 50px;
+    border-left: 2px solid #c9c7d3;
+}*/
+/*---------------Past Work---------*/
+#past-work {
+    background:#3f3d4e;
+    padding: 5rem 0 25rem 0;
+    text-align:center;
+    position: relative;
+    overflow:hidden;
+}
+.title {
+    color: #ffffff;
+    font-size: 2.5rem;
+    margin: 0 0 .75rem 0;
+}
+.logos {
+    background-color : #3f3d4e;
+    width:750px;
+    max-width:95%;
+}
+#slider_buttons {
+    list-style: none;
+    padding:0;
+    margin: 2rem 0;
+}
+#slider_buttons li {
+    width: 9px;
+    height: 9px;
+    margin: 0 .5rem;
+    position:relative;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: #5b596e;
+    transition: .4s ease-in-out;
+
+}
+
+
+#slider_buttons li:hover{
+    background: greenyellow;
+}
+/* TO do check way its not working 44:02 */
+.current {
+    background-color:greenyellow;
+}    
+#slider {
+    list-style:none;
+}
+#slider li {
+    width: 600px;
+    height: 375px;
+    overflow: hidden;
+    background-color:#ffffff;
+    -webkit-box-shadow: 0px 0px 57px 0px rgba(4,6,9,0.25);
+    -moz-box-shadow:0px 0px 75px 0px rgba(4,6,9,0.25);
+    box-shadow:0px 0px 57px 0px rgba(4,6,9,0.25);
+    position:absolute;
+    z-index:3;
+    border-radius:.35rem .35rem  0 0;
+}
+/*#slider li img {
+    width: 100%;
+}*/
+img {
+    width:100%;
+    
+}
+/* To do check youtube 40:30 */
+li:nth-child(1) {
+        bottom:-37px;
+        left:0;
+        -webkit-transform:scale(.8 .8);
+        -moz-transform:scale(.8 .8);
+        transform:scale(.8 .8);
+        z-index:2;
+    }
+li:nth-child(2){
+    
+    left:50%;
+    margin-left:-300px;
+    z-index:4;
+    bottom:0;
+}
+li:nth-child(3){
+        bottom:-37px;
+        right:0;
+        -webkit-transform:scale(.8 .8);
+        -moz-transform:scale(.8 .8);
+        transform:scale(.8 .8);
+        z-index:2;
+}
+
+/*----------contact---------*/
+#contact {
+background:#d5d3df;
+padding: 6rem 0 8rem 0;
+text-align: center;
+}
+.title1 {
+    font-size:2.5rem;
+    color:#3f3d4e;
+    margin:0;
+}
+.sub_title2 {
+    font-size:1.5rem;
+    color: grey;
+    width: 600px;
+    max-width:100%;
+    display:block;
+    margin: 0 auto 4rem auto;
+}
+footer {
+    padding: 1rem 0;
+}
+.copyright {
+    text-align: center;
+    font-weight: 700;
+    color:grey;
+}
+footer a {
+    color:#7ac483;
+    text-decoration: none;
+}
